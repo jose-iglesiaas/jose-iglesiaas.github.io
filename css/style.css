@@ -1,0 +1,94 @@
+:root{
+    --header-bgcolor: #1744eb;
+    --sectionhover-bgcolor: #d7d7d7;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main{
+    display: grid;
+    max-width: 100%;
+    margin: 40px auto;
+    padding: 20px;
+}
+h1{
+    font-size: clamp(2rem, 1.5rem + 2.5vw, 4rem);
+
+}
+h2{
+    font-size: clamp(1.5rem, 1.2rem + 1.5vw, 2.75rem);
+
+}
+.nameandocc{
+    padding: 1rem;
+}
+header {
+    display: flex;
+    background-color: var(--header-bgcolor);
+    padding: 15px;
+    color: white;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+header img {
+    width: clamp(7rem, 4rem + 5vw, 13rem);
+    height: clamp(7rem, 4rem + 5vw, 13rem);
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li img{
+    width: clamp(0.5rem, 10vw, 1rem);
+    height: auto;
+}
+section{
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 4vh;
+    margin-bottom: 2.50rem;
+    width: 70%;
+    border-radius: 2vh;
+    overflow-wrap: break-word;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+section:hover{
+    background-color: var(--sectionhover-bgcolor);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transform: translateY(-8px);
+
+}
+a:hover{
+   font-style: italic; 
+}
+h3,p,li{
+    line-height: 1.75;
+}
+
+section p{
+    font-size: clamp(1rem, 0.8rem + 0.7vw, 1.25rem);
+}
+
+h3{
+    font-size: clamp(1.25rem, 1rem + 1vw, 1.75rem);
+}
+
+ul{
+    list-style: none;
+    margin-left: 2vh;
+    font-size: clamp(1rem, 0.8rem + 0.7vw, 1.25rem);
+
+}
+footer{
+    text-align: center;
+    border: 1px solid black;
+    padding: 2rem;
+    margin-top: 3rem;
+}
