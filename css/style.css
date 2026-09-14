@@ -35,15 +35,16 @@ header {
     align-items: center;
     justify-content: center;
 }
-header img {
-    width: clamp(7rem, 4rem + 5vw, 13rem);
-    height: clamp(7rem, 4rem + 5vw, 13rem);
-    
-}
 a{
     text-decoration: none;
     color: black;
 }
+header img {
+    width: clamp(7rem, 4rem + 5vw, 13rem);
+    height: clamp(7rem, 4rem + 5vw, 13rem);
+    filter: drop-shadow(0 10px 10px rgba(0,0,0,0.35));
+}
+
 li img{
     width: clamp(0.5rem, 10vw, 1rem);
     height: auto;
